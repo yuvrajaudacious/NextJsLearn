@@ -1,18 +1,22 @@
-.login-main{
+.login-main {
     display: flex;
 }
-.login-main li{
+
+.login-main li {
     margin-left: 30px;
     list-style-type: none;
 }
-.login-main li a{
+
+.login-main li a {
     text-decoration: none;
 
 }
-.login-main h4{
+
+.login-main h4 {
     margin: 0;
 }
-.heading{
+
+.heading {
     color: blueviolet;
     text-align: center;
 }

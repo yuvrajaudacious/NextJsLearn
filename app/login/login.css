@@ -16,3 +16,9 @@
     color: blueviolet;
     text-align: center;
 }
+.stlogin{
+    width: 30%;
+    text-align: center;
+    /* display: inline; */
+    margin-left: 450px;
+}
