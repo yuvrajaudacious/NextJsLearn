@@ -1,6 +1,4 @@
 import Link from "next/link";
-import React from "react";
-
 const StudentList = () => {
   return (
     <div>
@@ -13,11 +11,9 @@ const StudentList = () => {
           <Link href="/StudentList/Yuvraj">Yuvraj</Link>
         </li>
         <li>
-          {" "}
           <Link href="/StudentList/Raj">Raj</Link>
         </li>
         <li>
-          {" "}
           <Link href="/StudentList/Ajay">Ajay</Link>
         </li>
       </ul>

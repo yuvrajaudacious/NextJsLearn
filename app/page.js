@@ -20,7 +20,14 @@ const page = () => {
         </li>
       </ul>
       <h1 className="heading"> Home Page </h1>
-      <Button type="primary">Primary Button</Button>
+      <Link href="/ProductList">ProductList</Link>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <Link href="/ServerPList">ServerPList </Link>
+
     </div>
   );
 };

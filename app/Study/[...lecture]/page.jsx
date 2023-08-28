@@ -1,6 +1,12 @@
-const page = () => {
-  return <div>
-  <h1>Lecture !</h1></div>;
-};
+'use client'
+const Lecture = ({params}) => {
+  return (
+    <div>
 
-export default page;
+      <h1>Lecture 1
+      
+      </h1>
+    </div>
+  );
+};
+export default Lecture;
