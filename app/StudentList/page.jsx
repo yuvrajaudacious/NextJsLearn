@@ -1,24 +1,21 @@
+"use client";
+import { List } from "antd";
 import Link from "next/link";
-const StudentList = () => {
+
+export default function StudentList() {
+  const students = ["Hariom", "Yuvraj", "Raj", "Ajay"];
+
   return (
     <div>
-      <h1>StudentList</h1>
-      <ul>
-        <li>
-          <Link href="/StudentList/Hariom">Hariom</Link>
-        </li>
-        <li>
-          <Link href="/StudentList/Yuvraj">Yuvraj</Link>
-        </li>
-        <li>
-          <Link href="/StudentList/Raj">Raj</Link>
-        </li>
-        <li>
-          <Link href="/StudentList/Ajay">Ajay</Link>
-        </li>
-      </ul>
+      <h1>Student List</h1>
+      <List
+        dataSource={students}
+        renderItem={(student) => (
+          <List.Item>
+            <Link href={`/StudentList/${student}`}>{student}</Link>
+          </List.Item>
+        )}
+      />
     </div>
-  );
-};
-
-export default StudentList;
+  )
+}

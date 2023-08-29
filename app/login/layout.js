@@ -1,30 +1,33 @@
 "use client";
+
+import React from "react";
 import Link from "next/link";
+import { Menu } from "antd";
 import "./login.css";
 import { usePathname } from "next/navigation";
-export default function Layout({ children }) {
+
+const Layout = ({ children }) => {
   const path = usePathname();
   console.log(path);
+
   return (
     <div>
       {path !== "/login/loginstudent" ? (
-        <ul className="login-main">
-          <li>
-            <h4 className="heading">Login NavBar</h4>
-          </li>
-          <li>
-            <Link href="/login">Login Main</Link>{" "}
-          </li>
-          <li>
-            <Link href="/login/loginstudent">Login Student</Link>{" "}
-          </li>
-          <li>
-            {" "}
-            <Link href="/login/loginteacher">Login Teacher</Link>{" "}
-          </li>
-        </ul>
+        <Menu theme="dark" mode="horizontal" className="login-main">
+          <Menu.Item key="main">
+            <Link href="/login">Login Main</Link>
+          </Menu.Item>
+          <Menu.Item key="student">
+            <Link href="/login/loginstudent">Login Student</Link>
+          </Menu.Item>
+          <Menu.Item key="teacher">
+            <Link href="/login/loginteacher">Login Teacher</Link>
+          </Menu.Item>
+        </Menu>
       ) : null}
       {children}
     </div>
   );
-}
+};
+
+export default Layout;
