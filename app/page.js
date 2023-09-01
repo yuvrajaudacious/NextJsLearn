@@ -21,33 +21,26 @@ const page = () => {
             <Link href="/login"> Login </Link>
           </Menu.Item>
           <Menu.Item key="3">
-            {" "}
             <Link href="/about"> About </Link>
           </Menu.Item>
           <Menu.Item key="4">
-            {" "}
             <Link href="/ProductList">ProductList</Link>
           </Menu.Item>
           <Menu.Item key="5">
-            {" "}
             <Link href="/Study">Study</Link>
           </Menu.Item>{" "}
           <Menu.Item key="6">
-            {" "}
             <Link href="/StudentList">StudentList</Link>
           </Menu.Item>
           <Menu.Item key="7">
-            {" "}
             <Link href="/ServerPList">Server List</Link>
           </Menu.Item>
           <Menu.Item key="8">
-            {" "}
             <Link href="/Location">Location</Link>
           </Menu.Item>
           <Menu.Item key="9">
-          {" "}
-          <Link href="/User">User</Link>
-        </Menu.Item>
+            <Link href="/User">User</Link>
+          </Menu.Item>
         </Menu>
       </Header>
     </div>

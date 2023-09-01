@@ -1,7 +1,12 @@
-export default function page(){
-    return(
-        <div>
-        <h1>Loader....... </h1>
-        </div>
-    )
+import { Spin } from "antd";
+import "./Loading.css"; 
+
+export default function Loading() {
+  return (
+    <div className="loading-container">
+      <div className="loading">
+        <Spin size="large" tip="Loading..." />
+      </div>
+    </div>
+  );
 }
