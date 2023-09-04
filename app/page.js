@@ -41,6 +41,9 @@ const page = () => {
           <Menu.Item key="9">
             <Link href="/User">User</Link>
           </Menu.Item>
+          <Menu.Item key="10">
+          <Link href="/users">GetUser</Link>
+        </Menu.Item>
         </Menu>
       </Header>
     </div>

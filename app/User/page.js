@@ -10,8 +10,7 @@ async function UserList() {
 export default function User() {
   const [isLoading, setIsLoading] = useState(true);
   const [users, setUsers] = useState([]);
-
-  useEffect(() => {
+    useEffect(() => {
     setTimeout(async () => {
       const userList = await UserList();
       setUsers(userList);
@@ -66,6 +65,6 @@ export default function User() {
           />
         </div>
       )}
-    </div> 
-   );
+    </div>
+  );
 }
